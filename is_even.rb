@@ -1,7 +1,7 @@
-def is_even?(num)
-  num % 2 == 0
-end
-
-def is_odd?(num)
-  !is_even?(num)
+def is_even(number)
+  if number % 2 == 0
+    true
+  else
+    false
+  end
 end
