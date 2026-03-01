@@ -1,12 +1,13 @@
 require 'rspec'
 require_relative '../is_even'
 
-RSpec.describe 'is_even' do
-    it 'returns true for even numbers' do
-        expect(is_even(4)).to eq(true)
-    end
+RSpec.describe 'is_odd?' do
+  it '奇数の場合、trueを返す' do
+    expect(is_odd?(3)).to eq(true)
+  end
 
-    it 'returns false for odd numbers' do
-        expect(is_even(5)).to eq(false)
-    end
+  it '偶数の場合、falseを返す' do
+    expect(is_odd?(4)).to eq(false)
+  end
 end
+
